@@ -49,15 +49,16 @@ public class PrngGui extends javax.swing.JFrame {
         cAmtLabel = new javax.swing.JLabel();
         mButton = new javax.swing.JButton();
         cButton = new javax.swing.JButton();
+        titleLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         middleSqLabel.setText("Middle Square");
-        getContentPane().add(middleSqLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+        getContentPane().add(middleSqLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, -1, -1));
 
         linearLabel.setText("Linear Congruential Generator");
-        getContentPane().add(linearLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, -1));
+        getContentPane().add(linearLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, -1, -1));
 
         middleScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -65,7 +66,7 @@ public class PrngGui extends javax.swing.JFrame {
         middleTextArea.setRows(5);
         middleScrollPane.setViewportView(middleTextArea);
 
-        getContentPane().add(middleScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 136, 168));
+        getContentPane().add(middleScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 160, 168));
 
         linearScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         linearScrollPane.setToolTipText("");
@@ -75,19 +76,19 @@ public class PrngGui extends javax.swing.JFrame {
         linearScrollPane.setViewportView(linearTextArea);
 
         getContentPane().add(linearScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 180, 170));
-        getContentPane().add(mSeedTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 90, -1));
-        getContentPane().add(mAmtTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 80, -1));
+        getContentPane().add(mSeedTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 90, -1));
+        getContentPane().add(mAmtTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 80, -1));
         getContentPane().add(cSeedTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, 80, -1));
         getContentPane().add(cMultTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 80, -1));
         getContentPane().add(cIncTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, 80, -1));
         getContentPane().add(cModTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 190, 80, -1));
         getContentPane().add(cAmtTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 90, -1));
 
-        mSeedLabel.setText("Seed (2,4,6)");
-        getContentPane().add(mSeedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        mSeedLabel.setText("Seed (length =2,4,6)");
+        getContentPane().add(mSeedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         mAmtLabel.setText("#'s Generated");
-        getContentPane().add(mAmtLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
+        getContentPane().add(mAmtLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, -1, -1));
 
         cSeedLabel.setText("Seed");
         getContentPane().add(cSeedLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, -1, -1));
@@ -119,6 +120,10 @@ public class PrngGui extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, -1, -1));
+
+        titleLabel.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        titleLabel.setText("Pseudorandom Number Generators");
+        getContentPane().add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -226,6 +231,7 @@ public class PrngGui extends javax.swing.JFrame {
     private javax.swing.JScrollPane middleScrollPane;
     private javax.swing.JLabel middleSqLabel;
     private javax.swing.JTextArea middleTextArea;
+    private javax.swing.JLabel titleLabel;
     // End of variables declaration//GEN-END:variables
 
 
